@@ -30,6 +30,11 @@ install(TARGETS hello_world
   EXPORT export_${PROJECT_NAME}
   DESTINATION lib/${PROJECT_NAME})
   
+
+
+
+
+
   
  add_executable(iostream_implimentations src/iostream_implimentations.cpp)
 target_include_directories(iostream_implimentations PUBLIC
@@ -42,6 +47,23 @@ install(TARGETS iostream_implimentations
 
   
   
+
+
+
+
+  add_executable(billCalculator src/billCalculator.cpp)
+target_include_directories(billCalculator PUBLIC
+  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+  $<INSTALL_INTERFACE:include>)
+
+install(TARGETS billCalculator
+  EXPORT export_${PROJECT_NAME}
+  DESTINATION lib/${PROJECT_NAME})
+
+
+
+
+
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
