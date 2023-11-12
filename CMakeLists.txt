@@ -62,6 +62,17 @@ install(TARGETS billCalculator
 
 
 
+  add_executable(operatorsConditions src/operatorsConditions.cpp)
+  target_include_directories(operatorsConditions PUBLIC
+    $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+    $<INSTALL_INTERFACE:include>)
+  
+  install(TARGETS operatorsConditions
+    EXPORT export_${PROJECT_NAME}
+    DESTINATION lib/${PROJECT_NAME})
+  
+    
+
 
 
 

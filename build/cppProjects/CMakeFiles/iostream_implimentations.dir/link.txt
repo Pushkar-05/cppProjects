@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/iostream_implimentations.dir/src/iostream_implimentations.cpp.o  -o iostream_implimentations 

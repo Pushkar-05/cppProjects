@@ -1,0 +1,67 @@
+-- The C compiler identification is GNU 9.4.0
+-- The CXX compiler identification is GNU 9.4.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 0.8.3 (/home/pps/ros2_eloquent/install/ament_cmake/share/ament_cmake/cmake)
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Found ament_lint_auto: 0.8.2 (/home/pps/ros2_eloquent/install/ament_lint_auto/share/ament_lint_auto/cmake)
+WARNING: Package name "cppProjects" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.
+-- Added test 'copyright' to check for copyright in CMake / C / C++ / Python code
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/pps/ros2_eloquent/src/cppProjects/include>
+-- Added test 'cpplint' to check C / C++ code against the Google style
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+-- Added test 'uncrustify' to check C / C++ code style
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/pps/ros2_eloquent/src/cppProjects/build/cppProjects
+[35m[1mScanning dependencies of target operatorsConditions[0m
+[35m[1mScanning dependencies of target iostream_implimentations[0m
+[35m[1mScanning dependencies of target billCalculator[0m
+[35m[1mScanning dependencies of target hello_world[0m
+[ 37%] [32mBuilding CXX object CMakeFiles/billCalculator.dir/src/billCalculator.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/operatorsConditions.dir/src/operatorsConditions.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/hello_world.dir/src/hello_world.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/iostream_implimentations.dir/src/iostream_implimentations.cpp.o[0m
+[100%] [32m[1mLinking CXX executable iostream_implimentations[0m
+[100%] [32m[1mLinking CXX executable hello_world[0m
+[100%] [32m[1mLinking CXX executable billCalculator[0m
+[100%] [32m[1mLinking CXX executable operatorsConditions[0m
+[100%] Built target operatorsConditions
+[100%] Built target billCalculator
+[100%] Built target iostream_implimentations
+[100%] Built target hello_world
+-- Install configuration: ""
+-- Installing: /home/pps/ros2_eloquent/src/cppProjects/install/cppProjects/lib/cppProjects/hello_world
+-- Installing: /home/pps/ros2_eloquent/src/cppProjects/install/cppProjects/lib/cppProjects/iostream_implimentations
+-- Installing: /home/pps/ros2_eloquent/src/cppProjects/install/cppProjects/lib/cppProjects/billCalculator
+-- Installing: /home/pps/ros2_eloquent/src/cppProjects/install/cppProjects/lib/cppProjects/operatorsConditions
+-- Installing: /home/pps/ros2_eloquent/src/cppProjects/install/cppProjects/share/ament_index/resource_index/package_run_dependencies/cppProjects
+-- Installing: /home/pps/ros2_eloquent/src/cppProjects/install/cppProjects/share/ament_index/resource_index/parent_prefix_path/cppProjects
+-- Installing: /home/pps/ros2_eloquent/src/cppProjects/install/cppProjects/share/cppProjects/environment/ament_prefix_path.sh
+-- Installing: /home/pps/ros2_eloquent/src/cppProjects/install/cppProjects/share/cppProjects/environment/ament_prefix_path.dsv
+-- Installing: /home/pps/ros2_eloquent/src/cppProjects/install/cppProjects/share/cppProjects/environment/path.sh
+-- Installing: /home/pps/ros2_eloquent/src/cppProjects/install/cppProjects/share/cppProjects/environment/path.dsv
+-- Installing: /home/pps/ros2_eloquent/src/cppProjects/install/cppProjects/share/cppProjects/local_setup.bash
+-- Installing: /home/pps/ros2_eloquent/src/cppProjects/install/cppProjects/share/cppProjects/local_setup.sh
+-- Installing: /home/pps/ros2_eloquent/src/cppProjects/install/cppProjects/share/cppProjects/local_setup.zsh
+-- Installing: /home/pps/ros2_eloquent/src/cppProjects/install/cppProjects/share/cppProjects/local_setup.dsv
+-- Installing: /home/pps/ros2_eloquent/src/cppProjects/install/cppProjects/share/cppProjects/package.dsv
+-- Installing: /home/pps/ros2_eloquent/src/cppProjects/install/cppProjects/share/ament_index/resource_index/packages/cppProjects
+-- Installing: /home/pps/ros2_eloquent/src/cppProjects/install/cppProjects/share/cppProjects/cmake/cppProjectsConfig.cmake
+-- Installing: /home/pps/ros2_eloquent/src/cppProjects/install/cppProjects/share/cppProjects/cmake/cppProjectsConfig-version.cmake
+-- Installing: /home/pps/ros2_eloquent/src/cppProjects/install/cppProjects/share/cppProjects/package.xml

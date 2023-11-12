@@ -1,0 +1,4 @@
+source;share/cppProjects/local_setup.bash
+source;share/cppProjects/local_setup.dsv
+source;share/cppProjects/local_setup.sh
+source;share/cppProjects/local_setup.zsh
