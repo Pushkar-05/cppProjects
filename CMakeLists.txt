@@ -85,7 +85,16 @@ install(TARGETS billCalculator
       DESTINATION lib/${PROJECT_NAME})
     
     
-
+      add_executable(switch src/switch.cpp)
+      target_include_directories(switch PUBLIC
+        $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+        $<INSTALL_INTERFACE:include>)
+      
+      install(TARGETS switch
+        EXPORT export_${PROJECT_NAME}
+        DESTINATION lib/${PROJECT_NAME})
+      
+      
 
 
 
