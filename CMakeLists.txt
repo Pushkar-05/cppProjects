@@ -95,7 +95,15 @@ install(TARGETS billCalculator
         DESTINATION lib/${PROJECT_NAME})
       
       
-
+        add_executable(forWhileDowhile src/forWhileDowhile.cpp)
+        target_include_directories(forWhileDowhile PUBLIC
+          $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+          $<INSTALL_INTERFACE:include>)
+        
+        install(TARGETS forWhileDowhile
+          EXPORT export_${PROJECT_NAME}
+          DESTINATION lib/${PROJECT_NAME})
+        
 
 
 if(BUILD_TESTING)
