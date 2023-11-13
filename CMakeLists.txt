@@ -71,6 +71,19 @@ install(TARGETS billCalculator
     EXPORT export_${PROJECT_NAME}
     DESTINATION lib/${PROJECT_NAME})
   
+
+
+
+
+    add_executable(logicalOperations_and_typecastingDatatypes src/logicalOperations_and_typecastingDatatypes.cpp)
+    target_include_directories(logicalOperations_and_typecastingDatatypes PUBLIC
+      $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+      $<INSTALL_INTERFACE:include>)
+    
+    install(TARGETS logicalOperations_and_typecastingDatatypes
+      EXPORT export_${PROJECT_NAME}
+      DESTINATION lib/${PROJECT_NAME})
+    
     
 
 
