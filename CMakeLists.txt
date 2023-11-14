@@ -75,35 +75,47 @@ install(TARGETS billCalculator
 
 
 
-    add_executable(logicalOperations_and_typecastingDatatypes src/logicalOperations_and_typecastingDatatypes.cpp)
-    target_include_directories(logicalOperations_and_typecastingDatatypes PUBLIC
-      $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
-      $<INSTALL_INTERFACE:include>)
-    
-    install(TARGETS logicalOperations_and_typecastingDatatypes
-      EXPORT export_${PROJECT_NAME}
-      DESTINATION lib/${PROJECT_NAME})
-    
-    
-      add_executable(switch src/switch.cpp)
-      target_include_directories(switch PUBLIC
-        $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
-        $<INSTALL_INTERFACE:include>)
-      
-      install(TARGETS switch
-        EXPORT export_${PROJECT_NAME}
-        DESTINATION lib/${PROJECT_NAME})
-      
-      
-        add_executable(forWhileDowhile src/forWhileDowhile.cpp)
-        target_include_directories(forWhileDowhile PUBLIC
-          $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
-          $<INSTALL_INTERFACE:include>)
-        
-        install(TARGETS forWhileDowhile
-          EXPORT export_${PROJECT_NAME}
-          DESTINATION lib/${PROJECT_NAME})
-        
+add_executable(logicalOperations_and_typecastingDatatypes src/logicalOperations_and_typecastingDatatypes.cpp)
+target_include_directories(logicalOperations_and_typecastingDatatypes PUBLIC
+$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+$<INSTALL_INTERFACE:include>)
+
+install(TARGETS logicalOperations_and_typecastingDatatypes
+EXPORT export_${PROJECT_NAME}
+DESTINATION lib/${PROJECT_NAME})
+
+
+add_executable(switch src/switch.cpp)
+target_include_directories(switch PUBLIC
+$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+$<INSTALL_INTERFACE:include>)
+
+install(TARGETS switch
+EXPORT export_${PROJECT_NAME}
+DESTINATION lib/${PROJECT_NAME})
+
+
+add_executable(forWhileDowhile src/forWhileDowhile.cpp)
+target_include_directories(forWhileDowhile PUBLIC
+$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+$<INSTALL_INTERFACE:include>)
+
+install(TARGETS forWhileDowhile
+EXPORT export_${PROJECT_NAME}
+DESTINATION lib/${PROJECT_NAME})
+
+
+
+
+add_executable(functionPrototyping src/functionPrototyping.cpp)
+target_include_directories(functionPrototyping PUBLIC
+$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+$<INSTALL_INTERFACE:include>)
+
+install(TARGETS functionPrototyping
+EXPORT export_${PROJECT_NAME}
+DESTINATION lib/${PROJECT_NAME})
+
 
 
 if(BUILD_TESTING)
