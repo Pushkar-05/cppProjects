@@ -118,6 +118,19 @@ DESTINATION lib/${PROJECT_NAME})
 
 
 
+add_executable(functionScopeArgumentReturn src/functionScopeArgumentReturn.cpp)
+target_include_directories(functionScopeArgumentReturn PUBLIC
+$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+$<INSTALL_INTERFACE:include>)
+
+install(TARGETS functionScopeArgumentReturn
+EXPORT export_${PROJECT_NAME}
+DESTINATION lib/${PROJECT_NAME})
+
+
+
+
+
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
   # the following line skips the linter which checks for copyrights
